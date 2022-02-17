@@ -1,6 +1,6 @@
-# nft-marketplace-starter-kit
-Please run npm install on the terminal to download the appropriate packages already defined to the package.json file. 
-Make sure you are in the source file. 
+This is an NFT Marketplace app built with React and Solidity.
+
+Please run **npm install** on the terminal to download the appropriate packages defined in the package.json file. 
 
 **Please ensure you have downloaded the following additionally **
 
@@ -8,13 +8,17 @@ Make sure you are in the source file.
 2. Truffle (global installation)
 3. Metamask.io (hooked up on the browser)
 
-**To run the development server on a local host scripts:** npm run start
+**To compile using Truffle and to deploy onto local Ganache blockchain**
+Ensure you have Ganache running on port 7545 and use "truffle compile" to compile.
+To deploy contracts, use "truffle migrate --reset".
 
-For truffle tests and console please consult the official Truffle documentaion for updates.
+**To run the development server on a local host:** npm run start
 
-Follow the course module on Udemy to build this project from the ground up:
-https://www.udemy.com/course/the-complete-solidity-course-blockchain-zero-to-expert/
+**To mint and perform other actions**
+Login is with MetaMask.  Ensure MetaMask is on the local Ganache network and import one or more 
+of the Ganache test accounts to MetaMask.
 
-Good luck and have fun!
-
-# KryptoBirds-NFT-Marketplace
+**OVERVIEW**
+Currently this app is a bare-bones starting point for an NFT marketplace.  The only functionality at this point is 
+the ability to mint NFTs onto the blockchain on a test network (Ganache), however other functionalities have been 
+defined in the backend, but not yet implemented.  This app follows ERC721 standards.
